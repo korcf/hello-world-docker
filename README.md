@@ -1,6 +1,6 @@
 # Docker Example
 
-This is a simple example of deploying an application in a Docker container.
+This is a simple example of deploying an application using a Docker container.
 
 ## Deploy the application
 
@@ -16,8 +16,9 @@ Save the Docker image locally as a tar archive:
 ```
 $ docker save python-hello > python-hello.tar
 ```
-Move the archived tar file to where you need to.
-Load the Docker image from the archived tar file:
+Move the tar file to a destination.
+
+Load the Docker image:
 ```
 $ docker load --input python-hello.tar 
 ```
