@@ -1,6 +1,6 @@
-# hello-world-docker
+# Docker Example
 
-This is a simple example of deploying an application with Docker.
+This is a simple example of deploying an application in a Docker container.
 
 ## Deploy the application
 
