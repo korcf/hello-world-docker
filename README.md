@@ -26,11 +26,11 @@ $ docker save python-hello > python-hello.tar
 
 ### Remote
 
-On a remote server check that Docker is installed:
+Check Docker installation:
 ```
 $ docker -v
 ```
-Copy the tar file to the remote server.
+Copy the tar file from the local system to the remote server.
 
 Load the Docker image from the tar file:
 ```
