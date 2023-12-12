@@ -8,7 +8,7 @@ Clone the repo:
 ```
 $ git clone git@github.com:korcf/hello-world-docker.git
 ```
-Install Docker and build a Docker image:
+Install Docker on a local system and build a Docker image:
 ```
 $ cd hello-world-docker/
 $ docker build -t python-hello .
