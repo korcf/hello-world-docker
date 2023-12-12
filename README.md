@@ -4,7 +4,7 @@ This is a simple example of deploying an application using a Docker container.
 
 ## Deploy the application
 
-Clone the repo:
+Clone the repo locally:
 ```
 $ git clone git@github.com:korcf/hello-world-docker.git
 ```
