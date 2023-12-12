@@ -19,15 +19,11 @@ $ docker save python-hello > python-hello.tar
 ```
 Move the tar file to a destination.
 
-Install Docker on a destination system and load the Docker image:
+Install Docker on a destination system and load the Docker image from the tar file:
 ```
 $ docker load --input python-hello.tar 
 ```
 Run the application in a Docker container:
 ```
 $ docker run python-hello
-```
-Verify the output:
-```
-Hello, World!
 ```
