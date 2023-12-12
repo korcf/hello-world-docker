@@ -6,7 +6,7 @@ This is a simple example of deploying an application using a Docker container.
 
 ### Local
 
-Check that Docker is installed:
+Check Docker installation:
 ```
 $ docker -v
 ```
@@ -26,11 +26,11 @@ $ docker save python-hello > python-hello.tar
 
 ### Remote
 
-Check that Docker is installed:
+On a remote server check that Docker is installed:
 ```
 $ docker -v
 ```
-Move the tar file to a destination.
+Copy the tar file to the remote server.
 
 Load the Docker image from the tar file:
 ```
