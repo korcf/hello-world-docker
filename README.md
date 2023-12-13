@@ -37,7 +37,7 @@ $ docker -v
 ```
 Run the application in a Docker container:
 ```
-$ docker run python-hello
+$ docker run korcf/python-hello:firsttry
 ```
 The above will pull the Docker image from the Docker Hub if the image does not exist on the remote system.
 
@@ -60,7 +60,7 @@ $ docker run python-hello
 
 ## Troubleshooting
 
-Switching Docker context enabled pushing to the Docker Hub:
+To push to the Docker Hub, switching Docker context was necessary:
 ```
 $ docker context ls
 $ docker context use default
