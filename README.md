@@ -23,6 +23,10 @@ Save the Docker image as a tar archive:
 ```
 $ docker save python-hello > python-hello.tar
 ```
+Or push the Docker image to the Docker Hub:
+```
+ddd
+```
 
 ### Remote
 
