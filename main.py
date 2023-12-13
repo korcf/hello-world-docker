@@ -1,6 +1,5 @@
-def hello_world():
-   print("Hello, World!")
+from hwpkg import hello
 
 
 if __name__ == '__main__':
-    hello_world()
+    hello.hello_world()
