@@ -37,7 +37,7 @@ $ docker -v
 ```
 Run the application in a Docker container:
 ```
-$ docker run korcf/python-hello:firsttry
+$ docker run hubusername/python-hello:firsttry
 ```
 The above will pull the Docker image from the Docker Hub if the image does not exist on the remote system.
 
