@@ -21,7 +21,8 @@ $ docker build -t python-hello .
 ```
 Option 1: Push the Docker image to the Docker Hub:
 ```
-$ docker push hubusername/python-hello:tagname
+$ docker tag python-hello hubusername/python-hello:firsttry
+$ docker push hubusername/python-hello:firsttry
 ```
 Option 2: Save the Docker image as a tar archive:
 ```
@@ -59,11 +60,13 @@ $ docker run python-hello
 
 ## Troubleshooting
 
-Docker Desktop. Docker context. Local/remote.
+Switching Docker context enabled pushing to the Docker Hub:
 ```
-$ docker login -u hubusername
 $ docker context ls
 $ docker context use default
+$ rm ~/.docker/config.json
+$ docker login -u hubusername
 $ docker context use desktop-linux
-$ vim ~/.docker/config.json
+$ docker tag python-hello hubusername/python-hello:firsttry
+$ docker push hubusername/python-hello:firsttry
 ```
