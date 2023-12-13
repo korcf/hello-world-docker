@@ -4,7 +4,7 @@ This is a simple example of deploying an application using a Docker container.
 
 ## Deploy the application
 
-### Local
+### Build the Docker image
 
 Check Docker installation:
 ```
@@ -19,18 +19,30 @@ Build a Docker image:
 $ cd hello-world-docker/
 $ docker build -t python-hello .
 ```
-Save the Docker image as a tar archive:
+Option 1: Push the Docker image to the Docker Hub:
+```
+docker push ..
+```
+Option 2: Save the Docker image as a tar archive:
 ```
 $ docker save python-hello > python-hello.tar
 ```
-Or push the Docker image to the Docker Hub:
-```
-ddd
-```
 
-### Remote
+### Deploy using the Docker Hub
 
-Check Docker installation:
+On the remote system, check Docker installation:
+```
+$ docker -v
+```
+Run the application in a Docker container:
+```
+$ docker run python-hello
+```
+The above will pull the Docker image from the Docker Hub if the image does not exist on the remote system.
+
+### Deploy without the Docker Hub
+
+On the remote system, check Docker installation:
 ```
 $ docker -v
 ```
