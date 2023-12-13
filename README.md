@@ -29,7 +29,7 @@ Option 2: Save the Docker image as a tar archive:
 $ docker save python-hello > python-hello.tar
 ```
 
-### Deploy using the Docker Hub
+### Deploy the application using the Docker Hub
 
 On the remote system, check Docker installation:
 ```
@@ -41,7 +41,7 @@ $ docker run korcf/python-hello:firsttry
 ```
 This will pull the Docker image from the Docker Hub if the image is not found locally.
 
-### Deploy without the Docker Hub
+### Deploy the application without using the Docker Hub
 
 On the remote system, check Docker installation:
 ```
