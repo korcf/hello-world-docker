@@ -56,3 +56,12 @@ Run the application in a Docker container:
 ```
 $ docker run python-hello
 ```
+
+## Troubleshooting
+
+Docker Desktop. Docker context. Local/remote.
+```
+$ docker context ls
+$ docker context use default
+$ docker context use desktop-linux
+```
