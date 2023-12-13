@@ -43,12 +43,14 @@ This will pull the Docker image from the Docker Hub if the image is not found lo
 
 ### Deploy the application without using the Docker Hub
 
+Copy the tar file from the local system to the remote server:
+```
+$ scp -i mykey.pem python-hello.tar myusername@mydomain.example:~/
+```
 On the remote system, check Docker installation:
 ```
 $ docker -v
 ```
-Copy the tar file from the local system to the remote server.
-
 Load the Docker image from the tar file:
 ```
 $ docker load --input python-hello.tar 
