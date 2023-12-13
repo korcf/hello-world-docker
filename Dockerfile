@@ -1,5 +1,9 @@
 FROM python:3.10-alpine
 
-ADD hello.py .
+ADD requirements.txt .
 
-CMD ["python", "./hello.py"]
+RUN pip install --no-cache-dir -r requirements.txt
+
+ADD main.py .
+
+CMD ["python", "./main.py"]
