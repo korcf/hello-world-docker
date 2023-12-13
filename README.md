@@ -21,8 +21,8 @@ $ docker build -t python-hello .
 ```
 Option 1: Push the Docker image to the Docker Hub:
 ```
-$ docker tag python-hello hubusername/python-hello:firsttry
-$ docker push hubusername/python-hello:firsttry
+$ docker tag python-hello korcf/python-hello:firsttry
+$ docker push korcf/python-hello:firsttry
 ```
 Option 2: Save the Docker image as a tar archive:
 ```
@@ -37,7 +37,7 @@ $ docker -v
 ```
 Run the application in a Docker container:
 ```
-$ docker run hubusername/python-hello:firsttry
+$ docker run korcf/python-hello:firsttry
 ```
 The above will pull the Docker image from the Docker Hub if the image does not exist on the remote system.
 
@@ -65,8 +65,8 @@ To push to the Docker Hub, switching Docker context was necessary:
 $ docker context ls
 $ docker context use default
 $ rm ~/.docker/config.json
-$ docker login -u hubusername
+$ docker login -u korcf
 $ docker context use desktop-linux
-$ docker tag python-hello hubusername/python-hello:firsttry
-$ docker push hubusername/python-hello:firsttry
+$ docker tag python-hello korcf/python-hello:firsttry
+$ docker push korcf/python-hello:firsttry
 ```
