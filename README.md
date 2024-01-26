@@ -39,7 +39,7 @@ Run the application in a Docker container:
 ```
 $ docker run korcf/python-hello:firsttry
 ```
-This will pull the Docker image from the Docker Hub if the image is not found locally.
+This will also pull the Docker image from the Docker Hub if the image is not found locally.
 
 ### Deploy the application without using the Docker Hub
 
