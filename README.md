@@ -19,12 +19,12 @@ Build a Docker image:
 $ cd hello-world-docker/
 $ docker build -t python-hello .
 ```
-Option 1: Push the Docker image to the Docker Hub:
+#### Option 1: Push the Docker image to the Docker Hub:
 ```
 $ docker tag python-hello korcf/python-hello:firsttry
 $ docker push korcf/python-hello:firsttry
 ```
-Option 2: Save the Docker image as a tar archive:
+#### Option 2: Save the Docker image as a tar archive:
 ```
 $ docker save python-hello > python-hello.tar
 ```
