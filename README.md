@@ -31,7 +31,7 @@ $ docker save python-hello > python-hello.tar
 
 ### Deploy the application using the Docker Hub
 
-Connect to remote system:
+Connect to the remote system:
 ```
 ssh -i mykey.pem myusername@mydomain.example
 ```
